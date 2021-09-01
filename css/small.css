@@ -230,7 +230,7 @@ ul {
   }
  
   .about-text-container h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     margin: 0 1rem;
   }
   .about-text-container h4 {
@@ -325,16 +325,37 @@ ul {
   opacity: 1; 
   z-index: 1;
 }
-.skills-image-container {
+.skills-image-container1 {
   margin-top: 2rem;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-image-container2 {
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-image-container3{
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .skills-image-holder {
-   width: 100%;
-  transition: 0.3s;
+  width: 100%;
+ transition: 0.3s;
 }
-
 .skills-image {
   margin-top: 2rem;
   border-bottom: 5px solid rgba(146, 207, 250, 0.96);
@@ -346,8 +367,7 @@ ul {
   width: auto;
   height: 1vh;
   border-radius: 4rem;
-  min-height: 170px;
-  
+  min-height: 100px;
 }
   /* SKILLS END */
 
@@ -386,31 +406,37 @@ font-size: var(--font-size-h1);
 }
 .port-image-holder {
   text-align: center;
-  width: 100%;
+  width: 50%;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
+
 .port-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
   border-radius: 5px;
-  margin-left: 2rem;
-  margin-right: 2rem;
   box-shadow: 0 4px 8px 0 rgba(43, 206, 84, 0.2);
   box-shadow: rgb(49 137 244) 0px 18.2571px 21.6157px -15.9059px;
  
 }
 .port-image {
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 90%;
   height: 100%;
   border-radius: 0.9rem;
-   background-size: cover;
+  background-size: cover;
   min-height: 180px;
   background-position: center;
   background-color: #ccc;
   transition: transform .75s cubic-bezier(.5,0,.5,1),opacity .25s linear;
- 
 }
-
 .port-text-holder {
   padding: 15px;
 }
@@ -562,7 +588,6 @@ footer {
   font-size: 3rem;
   color: var(--secondary);
 }
-
 .phone .phone-footer {
   color: var(--secondary);
   font-size: 1.5rem;
