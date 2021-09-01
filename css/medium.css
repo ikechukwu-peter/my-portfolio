@@ -1,15 +1,130 @@
 
  @media only screen and  (min-width: 768px){
-   nav {
-       background: red;
-   }
-  
-   .logo {
+/* GENERAL */
+  :root {
+    --font-size-h1: 8rem;
+    --font-size-h2: 4rem;
+    --font-size-h3: 3.75rem;
+    --font-size-h4: 2.25rem;
+    --font-size-h5: 1.875;
+    --font-size-body: 2rem; 
+  }
+
+  /* GENERAL ENDS */
+
+  /* NAVBAR */
+     .logo {
     text-decoration: none;
     font-size: 2rem;
     color: var(--primary);
     margin-left: 10rem;
   }
+      .link-container.open {
+        width: 30rem;
+    }
+
+    .nav_links li {
+      width: 100%;
+      margin-top: -1rem;
+      padding: 8rem;
+    
+    }
+    .nav_links li a {
+      font-size: 2.5rem;
+  }
+
+  /* NAVBAR ENDS */
+
+  /* ABOUT ME */
+  .about-text-container::before{
+    margin-left: -9rem;
+    margin-top: -1rem;
+    font-size: 6rem;
+  }
+  .about-text-container h3 {
+    font-size: var(--font-size-h4);
+    margin: 0 3rem;
+  }
+  /* ABOUT ME ENDS */
+
+   /* SERVICES */
+   .service-text-container::before{
+    margin-left: -14rem;
+    font-size: 6rem;
+  }
+   /* SERVICES ENDS */
+
+
+   /* SKILLS SECTION */
+   .skills-text-container::before {
    
+    margin-left: -9rem;
+    margin-top: -.1rem;
+    font-size: 6rem;
+  }
+
+  .skills-text-container h1 {
+    font-size: var(--font-size-h2);
+  }
+
+  .skills-image {
+    width: auto;
+    height: 2vh;
+    border-radius: 4rem;
+    min-height: 200px;
+  }
+   /* SKILLS ENDS */
+
+   /* PORTFOLIO BEGINS */
+   .port-text-container::before{
+      margin-left: -2rem;
+    margin-top: -1rem;
+    font-size: 6rem;
+  }
+
+  .port-text-container h1 {
+    font-size: var(--font-size-h3);
+    }
+
+    .port-image-container {
+      margin-left: 6rem;
+      margin-right: 6rem;
+     
+    }
+   /* PORTFOLIO ENDS */
+
+   /* CONTACT SECTION */
+
+   .contact {
+    margin-top: 10rem;
+  
+  }
+   .contact h1::before {
+    margin-left: -3rem;
+    margin-top: -2.9rem;
+    font-size: 6rem;
+  }
+
+  .contact h1::after {
+      margin-left: 29rem;
+  }
+
+  .contact-main textarea {
+    height: 14rem;
+  }
+
+   /* CONTACT ENDS */
+
+   /* FOOTER */
+   .name h1 {
+    color: var(--secondary);
+    font-size: var(--font-size-h3);
+  }
+
+  .phone .phone-footer {
+    font-size: 2.5rem;
+    padding-bottom: 6rem;
+  }
+   /* FOOTER ENDS */
  }
  

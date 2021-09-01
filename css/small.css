@@ -64,7 +64,7 @@ ul {
 
   .logo {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     color: var(--primary);
     margin-left: 5rem;
   }
@@ -212,10 +212,10 @@ ul {
     content: "Profile";
     position: absolute;
     color: rgb(187, 182, 182);
-      z-index: -1;
-      margin-left: -7rem;
-      margin-top: -1.4rem;
-      font-size: 4rem;
+    z-index: -1;
+    margin-left: -7rem;
+    margin-top: -1.4rem;
+    font-size: 4rem;
   }
   .about-text-container h1::after {
     content: "";
@@ -274,7 +274,7 @@ ul {
     height: 100%;
     width: 100%;
     padding-top: 4rem;
-  }
+    }
 
   .service-do-underline::after {
     content: "";
@@ -288,6 +288,70 @@ ul {
     z-index: 1;
   }
   /* SERVICE SECTION ENDS */
+
+  
+  /* SKILLS SECTION */
+.skills {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.skills-text-container{
+  text-align: center;
+}
+.skills-text-container h1 {
+  font-size: var(--font-size-h1);
+}
+.skills-text-container::before {
+  content: "Skills";
+  position: absolute;
+  color: rgb(187, 182, 182);
+  z-index: -1;
+  margin-left: -6rem;
+  margin-top: -0.4rem;
+  font-size: 4rem;
+}
+.skills-text-container h1::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 0.2rem;
+  margin-left: 7rem;
+  background: #F08358;
+  background: var(--primary);
+  opacity: 1; 
+  z-index: 1;
+}
+.skills-image-container {
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.skills-image-holder {
+   width: 100%;
+  transition: 0.3s;
+}
+
+.skills-image {
+  margin-top: 2rem;
+  width: 50%;
+  height: 10vh;
+  border-bottom: 5px solid rgba(146, 207, 250, 0.96);
+  border-radius: 150px;
+  padding: 2rem;
+  margin-top: 2rem;
+   background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+  
+}
+  /* SKILLS END */
+
+  /* PORTFOLIO BEGINS */
 .portfolio {
   display: flex;
   justify-content: center;
@@ -365,71 +429,10 @@ font-size: var(--font-size-h1);
 } 
   /* PORTFOLIO BEGINS */
 
-  /* SKILLS SECTION */
-.skills {
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- 
-}
-.skills-text-container{
-  text-align: center;
-}
-.skills-text-container h1 {
-  font-size: var(--font-size-h1);
-}
-.skills-text-container h1::before {
-  content: "Skills";
-  position: absolute;
-  color: rgb(187, 182, 182);
-  z-index: -1;
-  margin-left: 4rem;
-  margin-top: -2rem;
-  font-size: 4rem;
-}
-.skills-text-container h1::after {
-  content: "";
-  display: block;
-  width: 1.5em;
-  height: 0.2rem;
-  margin-left: 7rem;
-  background: #F08358;
-  background: var(--primary);
-  opacity: 1; 
-  z-index: 1;
-}
-.skills-image-container {
-  margin-top: 2rem;
-  border-radius: 5px;
-  text-align: center;
-}
-.skills-image-holder {
-   width: 100%;
-  transition: 0.3s;
-}
-
-.skills-image {
-  margin-top: 2rem;
-  width: 50%;
-  height: 10vh;
-  border-bottom: 5px solid rgba(146, 207, 250, 0.96);
-  border-radius: 150px;
-  padding: 2rem;
-  margin-top: 2rem;
-   background-size: cover;
-  min-height: 180px;
-  background-position: center;
-  background-color: #ccc;
-  
-}
-  /* SKILLS END */
-
   /* CONTACT SECTION */
   .contact {
     margin-top: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .contact h1 {
     text-align: center;
@@ -563,6 +566,7 @@ footer {
 .phone .phone-footer {
   color: var(--secondary);
   font-size: 1.5rem;
+  padding-bottom: 5rem;
 }
 .phone .phone-footer i {
   color: var(--primary);
