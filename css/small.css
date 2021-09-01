@@ -55,7 +55,7 @@ ul {
 }
 
 .link-container.open {
-    width: 25rem;
+     width: 20rem;
 }
 .nav_links.close {
     width: 0;
@@ -79,8 +79,7 @@ ul {
 
 
   nav {
-    background-color: green;
-      position: fixed;
+       position: fixed;
       height: 10vh;
       width: 100%;
       display: flex;
@@ -127,12 +126,14 @@ ul {
        
   }
 
+  
   .nav_links li {
-    margin: 4rem;
+    width: 100%;
+    margin: 10rem;
    
   }
   .nav_links li a {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--primary);
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -284,3 +285,287 @@ ul {
     z-index: 1;
   }
   /* SERVICE SECTION ENDS */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+
+}
+.port-text-container::before{
+  content: "Portfolio";
+  position: absolute;
+  color: rgb(187, 182, 182);
+  z-index: -1;
+  margin-left: -1rem;
+  margin-top: -.1rem;
+  font-size: 4rem;
+}
+.port-text-container h1 {
+font-size: var(--font-size-h1);
+}
+.port-text-container h1::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 0.2rem;
+  margin-left: 7rem;
+  background: #F08358;
+  background: var(--primary);
+  opacity: 1; 
+  z-index: 1;
+}
+.port-image-holder {
+  text-align: center;
+  width: 100%;
+  transition: 0.3s;
+}
+.port-image-container {
+  margin-top: 2rem;
+  border-radius: 5px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(43, 206, 84, 0.2);
+  box-shadow: rgb(49 137 244) 0px 18.2571px 21.6157px -15.9059px;
+ 
+}
+.port-image {
+  margin-top: 2rem;
+  width: 90%;
+  height: 100%;
+  border-radius: 0.9rem;
+   background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+  transition: transform .75s cubic-bezier(.5,0,.5,1),opacity .25s linear;
+ 
+}
+
+.port-text-holder {
+  padding: 15px;
+}
+.port-text-holder button{
+  background-color: transparent;
+   padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: .25rem;
+  border: 0px;
+  background-color: var(--primary);
+  box-shadow: rgb(49 137 244) 0px 18.2571px 21.6157px -15.9059px;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+} 
+  /* PORTFOLIO BEGINS */
+
+  /* SKILLS SECTION */
+.skills {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.skills-text-container{
+  text-align: center;
+}
+.skills-text-container h1 {
+  font-size: var(--font-size-h1);
+}
+.skills-text-container h1::before {
+  content: "Skills";
+  position: absolute;
+  color: rgb(187, 182, 182);
+  z-index: -1;
+  margin-left: 4rem;
+  margin-top: -2rem;
+  font-size: 4rem;
+}
+.skills-text-container h1::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 0.2rem;
+  margin-left: 7rem;
+  background: #F08358;
+  background: var(--primary);
+  opacity: 1; 
+  z-index: 1;
+}
+.skills-image-container {
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.skills-image-holder {
+   width: 100%;
+  transition: 0.3s;
+}
+
+.skills-image {
+  margin-top: 2rem;
+  width: 50%;
+  height: 10vh;
+  border-bottom: 5px solid rgba(146, 207, 250, 0.96);
+  border-radius: 150px;
+  padding: 2rem;
+  margin-top: 2rem;
+   background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+  
+}
+  /* SKILLS END */
+
+  /* CONTACT SECTION */
+  .contact {
+    margin-top: 4rem;
+    margin-top: 4rem;
+  }
+  .contact h1 {
+    text-align: center;
+  }
+
+  .contact h1::before {
+    content: "Contact";
+    position: absolute;
+    color: rgb(187, 182, 182);
+    z-index: -1;
+    margin-left: -4rem;
+    margin-top: -2.9rem;
+    font-size: 4rem;
+  }
+
+  .contact h1::after {
+    content: "";
+    display: block;
+    width: 1.3em;
+    height: 0.2rem;
+    margin-left: 12rem;
+    background: #F08358;
+    background: var(--primary);
+    opacity: 1; 
+    z-index: 1;
+  }
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-main button {
+    color: var(--primary);
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: var(--font-size-h2);
+  }
+
+  .contact-main input[type="text"], textarea{
+    width: 90%;
+    height: 4rem;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  background: var(--theme);
+  font-size: var(--font-size-h4);
+  resize: none;
+  padding-left: 10px;
+  padding-top: 10px;
+    }
+
+  .contact-main textarea {
+    height: 8rem;
+  }
+.contact-image {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-image-container {
+  width: 90%;
+}
+  /* CONTACT SECTION ENDS */
+
+  /* FOOTER SECTION */
+footer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1 {
+  color: var(--secondary);
+  font-size: var(--font-size-h1);
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.footer_links li{
+  margin: 2rem;
+}
+.footer_links li a {
+  font-size: var(--font-size-h2);
+  color: var(--secondary);
+}
+
+.footer_links li a:hover{
+  color: var(--primary);
+}
+.social-links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.social-list__item {
+  margin: 2rem;
+}
+.social-list__link:hover{
+  transform: translate(1.1);
+}
+
+.social-list__link {
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+.phone .phone-footer {
+  color: var(--secondary);
+  font-size: 1.5rem;
+}
+.phone .phone-footer i {
+  color: var(--primary);
+}
+
+  /* FOOTER ENDS */
+
+
+ 
