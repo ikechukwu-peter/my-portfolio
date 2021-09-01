@@ -242,10 +242,11 @@ ul {
     font-size: var(--font-size-h4);
     margin: 0 1rem;
   }
-  .about-text-container h4 {
-    font-size: var(--font-size-h4);
+  .about-text-container a {
+      font-size: var(--font-size-h4);
     color: var(--secondary);
     margin: 4rem 0;
+    padding: 4rem;
     text-decoration: underline;
     }
   .about-text-container h4 i {
@@ -256,6 +257,7 @@ ul {
 
   /* SERVICE SECTION */
   .service {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     text-align: center;
