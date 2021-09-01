@@ -240,6 +240,7 @@ footer {
         font-size: 2.5rem;
         color: var(--primary);
         font-weight: 800;
+        text-decoration: none;
     }
 
     /* NAVBAR ENDS */
