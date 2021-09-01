@@ -1,7 +1,6 @@
 @media screen and (min-width: 1024px) {
 
   nav {
-    background: yellow;
     flex-direction: row;
    
 }
@@ -61,7 +60,7 @@
 
     /* MAIN BEGINS */
     .intro {
-      margin-top: 12rem;
+      margin-top: 6rem;
       flex-direction: row;
     }	
     .intro-text-container{
@@ -168,6 +167,15 @@ min-height: 20rem;
     z-index: 1;
   }
  
+  .contact-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contact-image-container {
+    width: 100%;
+    margin-left: 2rem;
+  }
   /* CONTACT ENDS */
 
     /* FOOTER SECTION */
@@ -177,14 +185,8 @@ footer {
   justify-content: space-around;
 }
 
-.footer_links li{
-  margin:0  0.2rem;
-  margin-left: 4rem;
-}
-
-.footer_links li a {
-  font-size: var(--font-size-h4);
-
+.social-links-container {
+  width: auto;
 }
 
 .social-list {
@@ -197,11 +199,165 @@ footer {
   }
 
   .name h1 {
-       font-size: var(--font-size-h3);
-       margin-left: 2rem;
-  }
+       font-size: var(--font-size-h4);
+   }
 
   /* FOOTER ENDS */
     }
 
     
+    @media screen  and (min-width: 2560px){
+      :root {
+        --font-size-h1: 12rem;
+        --font-size-h2: 8rem;
+        --font-size-h3: 11.75rem;
+        --font-size-h4: 5.25rem;
+        --font-size-h5: 1.875;
+        --font-size-h6: 6rem;
+        --font-size-body: 2rem; 
+       
+      }
+      /* NAVBAR */
+      .nav_links li {
+        margin: 0;
+        width: 50%;
+        padding: 2rem;      
+    }
+    .nav_links li a {
+      font-size: 3.6rem;   
+      font-weight: 700; 
+    }
+    
+    .logo {
+        margin-left: 1.5rem;
+        font-size: var(--font-size-h2);
+        font-weight: 800;
+      }
+
+      .d-desktop {
+        display: flex;
+        margin-right: 1.5rem;
+        font-size: 2.5rem;
+        color: var(--primary);
+        font-weight: 800;
+    }
+
+    /* NAVBAR ENDS */
+    .intro {
+      margin-top: 14rem;
+      }
+/* SERVICE */
+      .service-text-container h1 {
+        font-size: var(--font-size-h3);
+      }
+      .service {
+        margin-bottom: 20rem;
+      }
+        .service-text-container::before {
+          margin-left: -40rem;
+          font-size: 20rem;
+          margin-top: -4rem;
+      }
+  
+      .service-do-underline::after {
+        margin-left: 40rem;
+    }
+    /* SERVICE ENDS */
+
+/* SKILSS */
+      .skills-image {
+        width: auto;
+        height: 15vh;
+        border-radius: 4rem;
+        min-height: 100px;
+      }
+      .skills-text-container::before {
+        margin-left: -30rem;
+        margin-top: -10rem;
+        font-size: 20rem;
+    }
+    .skills-text-container h1::after {
+       margin-left: 20rem;
+     }
+    
+     /* SKILLS ENDS */
+
+      /* PORTFOLIO */
+      .portfolio {
+       margin-top: 14rem;
+      
+      }
+
+      .port-image-holder {
+        width: 90%;
+        padding: 0 4rem;      
+      }
+
+      .port-image-container {
+        height: 40vh;      
+       
+      }
+      .port-text-container::before {
+        margin-left: -9rem;
+        margin-top: -4rem;
+        font-size: 20rem;
+      }
+      
+      .port-text-container h1::after {
+        margin-left: 25rem;
+      }
+      /* PORTFOLIO ENDS */
+
+      /* CONTACT */
+      .contact h1::before {
+        margin-left: -10rem;
+        margin-top: -12rem;
+        font-size: 20rem;
+      }
+      .contact h1::after {
+         margin-left: 83rem;
+      }
+      
+      .contact h1 {
+      
+        font-size: var(--font-size-h1);
+      }
+      
+      .contact {
+        margin-top: 20rem;
+      }
+        
+      .contact-main input[type="text"], textarea{
+        width: 90%;
+        height: 8rem;
+        }
+
+        .contact-main textarea {
+          height: 30rem;
+        }
+
+        /* CONTACT ENDS */
+        
+/* FOOTER */
+        .social-list__link {
+          font-size: 6rem;
+        }
+        .phone .phone-footer {
+          font-size: 3.5rem;
+     
+        }
+        /* FOOTER ENDS */
+
+    /* ABOUT */
+        .about-text-container::before {
+          margin-left: -24rem;
+          margin-top: 1rem;
+          font-size: 16rem;
+      }
+      .about-text-container h1{
+        font-size: var(--font-size-h3);
+        }
+  
+/* ABOUT ENDS */
+
+  }
