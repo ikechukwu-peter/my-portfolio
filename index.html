@@ -38,8 +38,8 @@
         </div>
 
         <div class="phone">
-            <a class="d-desktop" href="tel:+2349082906878"><i class="fas fa-phone-alt"></i> +2349082906878</a>
-            <a class="d-mobile" href="tel:+2349082906878"><i class="fas fa-phone-alt"></i></a>
+            <a class="d-desktop" href="tel:+2349082906878" target="_blank"><i class="fas fa-phone-alt"></i> +2349082906878</a>
+            <a class="d-mobile" href="tel:+2349082906878" target="_blank"><i class="fas fa-phone-alt"></i></a>
         </div>
     </nav>
     <main>
@@ -47,7 +47,7 @@
             <div class="intro-text-container">
                 <h1>Hi! I am Peter</h1>
                 <h3>Fullstack Software Engineer</h3>
-                <h4> <i class="fas fa-arrow-right"></i> Get in Touch</h4>
+                <a href="https://api.whatsapp.com/send/?phone=23409082906878&text=HELLO+DEV+PETE%2C++PLEASE+I+NEED+A+WEBSITE+OR+WEB-APP+&app_absent=0" target="_blank"> <i class="fas fa-arrow-right"></i> Get in Touch</a>
             </div>
             <div class="intro-image-container"> <img class="intro-image" src="./images/undraw_dev_productivity_umsq.svg"
                     alt="Image of a Software Engineer"> </div>
@@ -118,33 +118,33 @@
                             Wood.In
                         </h2>
                         <h3>
-                            A web app on local maga
+                          An online store landing page
                         </h3>
-                        <button>Click to View</button>
+                        <button  onclick="window.location.href='https://woodin.netlify.app';">Click to View</button>
                     </div>
                 </div>
                 <div class="port-image-container">
                     <img class="port-image" src="./images/woodin.png" alt="Image of Wood.In an E-commerce Project">
                     <div class="port-text-holder">
                         <h2>
-                            Wood.In
+                           Petra University
                         </h2>
                         <h3>
-                            A web app on local maga
+                           An Online University
                         </h3>
-                        <button>Click to View</button>
+                        <button onclick="window.location.href='https://petrau.netlify.app/';">Click to View</button>
                     </div>
                 </div>
                 <div class="port-image-container">
                     <img class="port-image" src="./images/woodin.png" alt="Image of Wood.In an E-commerce Project">
                     <div class="port-text-holder">
                         <h2>
-                            Wood.In
+                           Dev Pete
                         </h2>
                         <h3>
-                            A web app on local maga
+                            A Software Engineer Portfolio
                         </h3>
-                        <button>Click to View</button>
+                        <button  onclick="window.location.href='https://devpet.netlify.app/';">Click to View</button>
                     </div>
                 </div>
             </div>
@@ -161,6 +161,7 @@
                     <input type="text" name="subject" placeholder="Subject">
                     <textarea name="message" id="" placeholder="Message"></textarea>
                     <button><i class="fas fa-arrow-right"></i> Send</button>
+                    <p id="form-status"> </p>
                 </form>
                 <div class="contact-image-container"> <img class="contact-image"
                         src="./images/undraw_message_sent_1030.svg" alt="Image of a Software Engineer">
