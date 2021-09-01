@@ -337,16 +337,16 @@ ul {
 
 .skills-image {
   margin-top: 2rem;
-  width: 50%;
-  height: 10vh;
   border-bottom: 5px solid rgba(146, 207, 250, 0.96);
   border-radius: 150px;
   padding: 2rem;
-  margin-top: 2rem;
-   background-size: cover;
-  min-height: 180px;
+  background-size: cover;
   background-position: center;
   background-color: #ccc;
+  width: auto;
+  height: 1vh;
+  border-radius: 4rem;
+  min-height: 170px;
   
 }
   /* SKILLS END */
