@@ -126,16 +126,19 @@ ul {
        
   }
 
+  .nav_links {
+ overflow: hidden;
+  }
   
   .nav_links li {
     width: 100%;
-    margin: 10rem;
+    margin-top: -1rem;
+    padding: 3rem;
    
   }
   .nav_links li a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--primary);
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     transition: 0.3s;
   }
