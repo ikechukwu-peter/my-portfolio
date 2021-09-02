@@ -43,8 +43,8 @@
   }
   .about-text-container h3 {
     font-size: var(--font-size-h4);
-    margin: 0 3rem;
-  }
+    margin: 4rem 3rem;
+}
   /* ABOUT ME ENDS */
 
    /* SERVICES */
@@ -52,6 +52,15 @@
     margin-left: -14rem;
     font-size: 6rem;
   }
+
+  .service-do-underline::after {
+    margin-left: 14rem;
+}
+
+.service-subtext {
+  font-size: var(--font-size-h3);
+  margin-bottom: 2rem;
+}
    /* SERVICES ENDS */
 
 
@@ -71,8 +80,8 @@
     width: auto;
     height: 2vh;
     border-radius: 4rem;
-    min-height: 200px;
-  }
+    min-height: 150px;
+}
    /* SKILLS ENDS */
 
    /* PORTFOLIO BEGINS */
@@ -81,11 +90,17 @@
     margin-top: -1rem;
     font-size: 6rem;
   }
-
+.port-text-container h1::after {
+  margin-left: 8rem;
+}
   .port-text-container h1 {
-    font-size: var(--font-size-h4);
-    }
+    font-size: var(--font-size-h2);
+}
 
+.port-text-holder h3 {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+}
    
       .port-image-container {
         padding: 0 2rem;

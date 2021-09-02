@@ -120,9 +120,21 @@
 .service-image {
 min-height: 20rem;
   }
+
+  .service-image-container {
+    width: 30%;
+}
+
+.service-subtext {
+  font-size: var(--font-size-h4);
+  margin-bottom: 2rem;
+}
 /* SERVICES ENDS */
 
 /* SKILLS BEGIN */
+.skills {
+  margin-top: 10rem;
+}
 .skills-image-container1 {
   flex-direction: row;
   justify-content: space-around;
@@ -133,7 +145,7 @@ min-height: 20rem;
 }
 .skills-image-container3 {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /* SKILLS ENDS */
 
@@ -144,6 +156,15 @@ min-height: 20rem;
   align-items: center;
   justify-content: space-around;
 
+}
+
+.port-image-container {
+  width: 25%;
+}
+.port-text-holder button {
+  padding: .8rem;
+  font-size: 1.8rem;
+  max-width: 20rem;
 }
 /* PORTFOLIO ENDS */
 
@@ -175,6 +196,10 @@ min-height: 20rem;
   .contact-image-container {
     width: 100%;
     margin-left: 2rem;
+  }
+
+  .form {
+    width: 80%;
   }
   /* CONTACT ENDS */
 
