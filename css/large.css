@@ -204,6 +204,11 @@ min-height: 20rem;
   /* CONTACT ENDS */
 
     /* FOOTER SECTION */
+
+    .scroll {
+      height: 6%;
+      width: 10%;
+  }
 footer {
   flex-direction: row;
   align-items: center;
