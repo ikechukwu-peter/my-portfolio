@@ -29,6 +29,7 @@ body {
    overflow-x: hidden;
    background-color: var(--theme);
    font-size: var(--font-size-body);
+   max-width: 2560px;
 }
 
 :root {
@@ -177,6 +178,7 @@ padding: 0 2rem;
 }
 .intro-text-container h3{
 font-size: var(--font-size-h3);
+margin-bottom: 1rem;
 }
 .intro-text-container a{
 cursor: pointer;
@@ -225,6 +227,7 @@ color: var(--primary);
   margin-left: -7rem;
   margin-top: -1.4rem;
   font-size: 4rem;
+  opacity: 0.5;
 }
 .about-text-container h1::after {
   content: "";
@@ -240,7 +243,7 @@ color: var(--primary);
 
 .about-text-container h3 {
   font-size: var(--font-size-h4);
-  margin: 0 1rem;
+  margin: 2rem;
 }
 .about-text-container a {
     font-size: var(--font-size-h4);
@@ -272,6 +275,7 @@ color: var(--primary);
   margin-left: -9rem;
   margin-top: -1.4rem;
   font-size: 4rem;
+  opacity: 0.4;
 }
 
 .service-image-holder {
@@ -285,6 +289,7 @@ color: var(--primary);
   height: 100%;
   width: 100%;
   padding-top: 4rem;
+  margin-bottom: 1rem;
   }
 
 .service-do-underline::after {
@@ -297,6 +302,11 @@ color: var(--primary);
   background: var(--primary);
   opacity: 1; 
   z-index: 1;
+}
+
+.service-subtext {
+  font-size: var(--font-size-h4);
+  margin-bottom: 2rem;
 }
 /* SERVICE SECTION ENDS */
 
@@ -324,6 +334,7 @@ z-index: -1;
 margin-left: -6rem;
 margin-top: -0.4rem;
 font-size: 4rem;
+opacity: 0.4;
 }
 .skills-text-container h1::after {
 content: "";
@@ -392,25 +403,26 @@ width: 100%;
 margin-top: 4rem;
 
 }
-.port-text-container::before{
-content: "Portfolio";
-position: absolute;
-color: rgb(187, 182, 182);
-z-index: -1;
-margin-left: -1rem;
-margin-top: -.1rem;
-font-size: 4rem;
+.port-text-container::before {
+  content: "Projects";
+  position: absolute;
+  color: rgb(187, 182, 182);
+  z-index: -1;
+  margin-left: -1rem;
+  margin-top: -.1rem;
+  font-size: 4rem;
+  opacity: 0.4;
 }
 .port-text-container h1 {
 font-size: var(--font-size-h1);
 }
+
 .port-text-container h1::after {
 content: "";
 display: block;
 width: 1.5em;
 height: 0.2rem;
 margin-left: 7rem;
-background: #F08358;
 background: var(--primary);
 opacity: 1; 
 z-index: 1;
@@ -483,6 +495,7 @@ margin-top: 2rem;
   margin-left: -4rem;
   margin-top: -2.9rem;
   font-size: 4rem;
+  opacity: 0.5;
 }
 
 .contact h1::after {
