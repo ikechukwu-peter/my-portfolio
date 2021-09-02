@@ -110,7 +110,7 @@ nav {
     left: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
-    z-index: 99;
+    z-index: 99999;
 
 } 
 
@@ -124,7 +124,7 @@ nav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 999; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   display: flex;
@@ -573,7 +573,7 @@ color: var(--secondary);
     position: fixed;
     bottom: 20px; 
     right: 30px; 
-    z-index: 99; 
+    z-index: 1; 
     border: none; 
     outline: none;
     background-color: var(--primary);
