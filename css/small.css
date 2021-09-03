@@ -58,6 +58,7 @@ ul {
 
 .link-container.open {
    width: 20rem;
+   z-index: 9999;
 }
 .nav_links.close {
   width: 0;
